@@ -13,18 +13,17 @@ public class ClasseCiclabile {
 
     // metodi
     public int getElementoSuccessivo() {
-        if (indiceCorrente <= numeri.length) {
-            return numeri[indiceCorrente += 1];
+        if (indiceCorrente == numeri.length - 1) {
+            System.out.println("L'array non ha più elementi");
         }
-        indiceCorrente = 0;
-        return numeri[indiceCorrente];
+        return numeri[indiceCorrente += 1];
     }
 
     public boolean hasAncoraElementi() {
-        if (indiceCorrente < numeri.length) {
-            return true;
+        if (indiceCorrente == numeri.length - 1) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 }
