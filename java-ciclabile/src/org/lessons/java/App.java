@@ -14,6 +14,7 @@ public class App {
         System.out.println(cicloNumeri.hasAncoraElementi());
         System.out.println(cicloNumeri.getElementoSuccessivo());
         System.out.println(cicloNumeri.getElementoSuccessivo());
+        System.out.println(cicloNumeri.getElementoSuccessivo());
         System.out.println(cicloNumeri.hasAncoraElementi());
         System.out.println(cicloNumeri.getElementoSuccessivo());
 

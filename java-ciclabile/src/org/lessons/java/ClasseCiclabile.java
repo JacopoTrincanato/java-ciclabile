@@ -12,20 +12,18 @@ public class ClasseCiclabile {
     }
 
     // metodi
+
     public int getElementoSuccessivo() {
-        if (indiceCorrente == numeri.length - 1) {
+
+        if (!hasAncoraElementi()) {
             System.out.println("L'array non ha più elementi");
-        } else if (indiceCorrente == 0) {
-            System.out.println(numeri[indiceCorrente]);
         }
-        return numeri[indiceCorrente += 1];
+
+        return numeri[indiceCorrente++];
     }
 
     public boolean hasAncoraElementi() {
-        if (indiceCorrente == numeri.length - 1) {
-            return false;
-        }
-
-        return true;
+        return indiceCorrente < numeri.length;
     }
+
 }
