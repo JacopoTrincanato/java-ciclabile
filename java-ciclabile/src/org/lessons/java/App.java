@@ -8,15 +8,13 @@ public class App {
 
         ClasseCiclabile cicloNumeri = new ClasseCiclabile(numeriInteri);
 
-        // testo i vari metodi
-        System.out.println(cicloNumeri.getElementoSuccessivo());
-        System.out.println(cicloNumeri.getElementoSuccessivo());
+        // testo il codice
+
+        while (cicloNumeri.hasAncoraElementi()) {
+            System.out.println(cicloNumeri.getElementoSuccessivo());
+        }
+
         System.out.println(cicloNumeri.hasAncoraElementi());
-        System.out.println(cicloNumeri.getElementoSuccessivo());
-        System.out.println(cicloNumeri.getElementoSuccessivo());
-        System.out.println(cicloNumeri.getElementoSuccessivo());
-        System.out.println(cicloNumeri.hasAncoraElementi());
-        System.out.println(cicloNumeri.getElementoSuccessivo());
 
     }
 }

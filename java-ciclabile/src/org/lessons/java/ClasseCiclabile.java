@@ -14,11 +14,6 @@ public class ClasseCiclabile {
     // metodi
 
     public int getElementoSuccessivo() {
-
-        if (!hasAncoraElementi()) {
-            System.out.println("L'array non ha più elementi");
-        }
-
         return numeri[indiceCorrente++];
     }
 
