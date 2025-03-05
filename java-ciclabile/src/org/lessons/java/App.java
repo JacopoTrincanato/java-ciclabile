@@ -19,5 +19,18 @@ public class App {
 
         System.out.println(cicloNumeri.hasAncoraElementi());
 
+        // creo un nuovo array utilizzando il costruttore bonus
+        ClasseCiclabile numeriBonus = new ClasseCiclabile();
+
+        numeriBonus.addElemento(123);
+        numeriBonus.addElemento(12);
+        numeriBonus.addElemento(1);
+        numeriBonus.addElemento(23);
+        numeriBonus.addElemento(13);
+
+        while (numeriBonus.hasAncoraElementi()) {
+            System.out.println(numeriBonus.getElementoSuccessivo());
+        }
+
     }
 }

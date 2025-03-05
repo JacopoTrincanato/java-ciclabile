@@ -13,7 +13,7 @@ public class ClasseCiclabile {
 
     // costruttore bonus
     public ClasseCiclabile() {
-
+        this.numeri = new int[0];
     }
 
     // metodi
