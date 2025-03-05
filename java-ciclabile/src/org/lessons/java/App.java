@@ -8,6 +8,9 @@ public class App {
 
         ClasseCiclabile cicloNumeri = new ClasseCiclabile(numeriInteri);
 
+        // aggiungo un nuovo intero a cicloNumeri
+        cicloNumeri.addElemento(6);
+
         // testo il codice
 
         while (cicloNumeri.hasAncoraElementi()) {

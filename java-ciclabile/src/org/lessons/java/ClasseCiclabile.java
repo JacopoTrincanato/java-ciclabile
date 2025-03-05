@@ -26,14 +26,14 @@ public class ClasseCiclabile {
         return indiceCorrente < numeri.length;
     }
 
-    public void addElemento(int nuovoNUmero) {
+    public void addElemento(int nuovoNumero) {
         int[] numeriAggiornati = new int[this.numeri.length + 1];
 
         for (int i = 0; i < this.numeri.length; i++) {
             numeriAggiornati[i] = this.numeri[i];
         }
 
-        numeriAggiornati[numeriAggiornati.length - 1] = nuovoNUmero;
+        numeriAggiornati[numeriAggiornati.length - 1] = nuovoNumero;
 
         this.numeri = numeriAggiornati;
     }
